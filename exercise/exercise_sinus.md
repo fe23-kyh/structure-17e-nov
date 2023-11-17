@@ -2,80 +2,22 @@
 
 # DOM exercises
 ## Kom igång
-Ladda ner sinus minishop. All din kod ska skrivas i *script.js*.
-I denna övning kommer du få öva på:
+Gör klart DOM bootcamp från 10e november. Den innehåller basen för denna övning
 
-- Leta reda på saker i DOM och ändra innehåll
-- Lyssna efter events på olika element
-- Lägga till ny HTML med JS
+Fokuset för denna övning är
+- DOM API:et
+- Listor
+
+### 1. Träna på källkod
+Ändra layout:et så att varje vara har ett pris
+
+### 2. Spara interkation
+Gör så att användaren kan "köpa" varor genom att på skärmen skriva ut den totala summan av de varor som har "köpts"
+
+### 3. Skapa ny layout
+Gör en lista på högersida om varushoppen där användaren kan se varje vara som den har köpt plus den totala summan
 
 
-## DOM Selecta!
-![screen](screen.png)
-
-**1.** Byt *namn* på första hoodien från *Ash* till *Potato*.
-
-<details>
-    <summary>Tips</summary>
-    använd .innerText
-</details>
-
-**2.** Byt *namn* på *Home* till *Start*.
-
-**3.** Byt *namn* på *Contact* till *Mail Us*.
-
-**4.** Byt ut informationen om *Sinus Hoodie  - Fire*.
-
-**5.** Byt *bakgrundsfärg* och *text* på en knapp.
-
-<details>
-    <summary>Tips</summary>
-    använd el.style.backgroundColor
-</details>
-
-**6.** Byt bakgrundsfärg på någon av produkterna.
-
-**7.** Byt ut adressen på sidan.
-
-**8.** Byt färg på samtliga ```<p>```.
-<details>
-    <summary>Tips</summary>
-    använd .querySelectorAll()
-</details>
-
-**9.** Ändra text på samtliga knappar till *add to cart*.
-
-**10.** Lägg till classen *active* på menyalternativet *home*.
-<details>
-    <summary>Tips</summary>
-    använd el.classList.add()
-</details>
-
-**11.** Ta bort classen *logo* på logotypen.
-<details>
-    <summary>Tips</summary>
-    använd el.classList.remove()
-</details>
-
-## Add Content
-
-**12.** Lägg till ett nytt menyalternativ.
-
-**13.** Lägg till en ny produkt med följande info.
-
-|el|beskrivning|
-|---|---|
-|img |hoodie-forrest.png|
-|h2 | Sinus Hoodie |
-|h3 |Forrest|
-|p|Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dolores.|
-
-<details>
-    <summary>Tips</summary>
-    använd el.insertAdjecentHTML('beforeend',...)
-</details>
-
-## Events
-**14.** Lyssna efter ett klick på logotypen (```.logo```). När den registrerar ett klick skall du console.log:a "found you!";
-
-**15.** Lyssna efter klick på samtliga produkter ( ```<article>```). När den registrerar ett klick skall du console.log:a "Hi, Im article Fire / Ash / Water".
+### Level up - 4. SPA
+Skapa en knapp som heter "Se kundvagn" där om användaren trykcer på den så kommer användaren till en ny vy där den kan se endast innehållet från #3.
+Obs. Om du gör en helt ny html så kommer inte javascriptkoden komma ihåg innehållet från förra sidan. Du kan lösa detta genom att antingen spara innehållet i [localstorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) ELLER genom att "dölja" det ursprungliga innehållet med css egenskapen display:none och då "toggla" mellan två divs innehåll (avancerat, och känt som SPA (single page application)).
